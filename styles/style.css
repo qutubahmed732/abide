@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* HEADER */
+
+.navbar {
+    padding-inline: 25px;
+    padding-block: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_div {
+    width: 7.5rem;
+    height: auto;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+}
+
+.nav_links * {
+    margin-right: 1.3rem;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.nav_links li:first-child a {
+    text-decoration: underline #D02E11 3px;
+    text-underline-offset: .5rem;
+}
+
+li:hover {
+    text-decoration: underline #D02E11 3px;
+    text-underline-offset: .5rem;
+}
+
+.divider {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+/* HERO SECTION */
+
+.main {
+    margin-bottom: 4rem;
+}
+
+section.image {
+    border: 1px solid black;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/hero-section-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 100px;
+}
+
+.quote {
+    background-color: #00000073;
+    text-wrap: balance;
+    width: 95%;
+    font-size: 3.1rem;
+    padding: 50px;
+    margin: 4rem auto;
+    color: white;
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+/* INTRODUCTION-SECTION */
+
+.intro-section {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+}
+
+figure {
+    width: 45%;
+}
+
+figcaption {
+    color: #1A1818;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 3.8rem;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.intro-image {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.intro-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.text-section {
+    width: 55%;
+    height: 100vh;
+    padding-left: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section p {
+    font-family: "Nunito", sans-serif;
+    color: rgba(0, 0, 0, 0.767);
+    font-size: 19px;
+    line-height: 1.4;
+    margin-top: 40px;
+}
+
+/* LEARN ABIDING SECTION */
+
+.cards {
+    margin-bottom: 10rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards-section-heading {
+    color: #1A1818;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 3.8rem;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.article-card {
+    width: 30.333%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+}
+
+.card img {
+    width: 100%;
+    height: 85%;
+}
+
+.card p {
+    width: 100%;
+    height: 15%;
+    color: white;
+    background-color: #1A1818;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Kumbs Sans", sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph {
+    text-align: center;
+    padding: 20px 23px 15px 23px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000a4;
+    font-family: "Kumbh-sans", sans-serif;
+}
+
+
+/* FEEDBACK SLIDE SECTION */
+
+.slide-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+    font-family: "kumbh sans", sans-serif;
+}
+
+.slider-heading {
+    font-size: 2rem;
+}
+
+.feedbacks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.angle {
+    height: 10%;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.feedback-card {
+    text-align: center;
+    width: 47%;
+    height: 60vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    height: 80%;
+    line-height: 1.3;
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.918);
+    padding: 30px;
+}
+
+cite {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* FOOTER */
+
+footer {
+    border: 1px solid black;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container .logo_div {
+    width: 25%;
+    margin: 0 auto 1.4rem auto;
+}
+
+.intro-para {
+    font-family: "Khumb-sans", sans-serif;
+    margin: 1rem auto 2rem auto;
+    text-align: center;
+    width: 35rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #000000e0;
+}
+
+.footer-nav_links {
+    list-style: none;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav_links a {
+    font-family: "Khumb-sans", sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.footer-nav_links li:first-child a {
+    text-decoration: underline #D02E11 3px;
+    text-underline-offset: .5rem;
+}
+
+.copyright-text {
+    font-size: 1.1rem;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+
+    font-family: "Khumb-sans", sans-serif;
+}
+
+.copyright-text p {
+    padding: 10px 50px 20px 50px;
+}
+
+@media 
