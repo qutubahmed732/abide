@@ -17,6 +17,10 @@
     justify-content: space-between;
 }
 
+header i.hidden {
+    display: none;
+}
+
 .logo_div {
     width: 7.5rem;
     height: auto;
@@ -31,6 +35,14 @@
     display: flex;
     list-style: none;
 }
+
+/* header .navbar ul.hidden {
+    display: none;
+}
+
+#navbar_menu_close {
+    display: none;
+} */
 
 .nav_links * {
     margin-right: 1.3rem;
@@ -198,6 +210,7 @@ figcaption {
 
 .paragraph {
     text-align: center;
+    text-wrap: balance;
     padding: 20px 23px 15px 23px;
     width: 100%;
     font-size: 1rem;
@@ -329,4 +342,157 @@ footer {
     padding: 10px 50px 20px 50px;
 }
 
-@media 
+#navbar_items {
+    display: none;
+    padding-block: 1rem;
+    padding-left: 2rem;
+    border-top: 2px solid black;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 2rem;
+    transition: padding 2s ease-in-out;
+}
+
+@media (min-width: 1800px){
+    .nav_links a {
+        font-size: 2rem;
+    }
+
+    .quote {
+        font-size: 5rem;
+    }
+
+    figcaption {
+        font-size: 3.5rem;
+    }
+
+    .text-section p {
+        font-size: 1.7rem;
+    }
+
+    .cards-section-heading {
+        font-size: 3.5rem;
+    }
+
+    .card {
+        height: 30rem;
+    }
+
+    .paragraph {
+        font-size: 1.15rem;
+        text-wrap: balance;
+    }
+
+    .slider-heading {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        text-wrap: balance;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .intro-para {
+        font-size: 1.25rem;
+    }
+
+    .copyright-text {
+        font-size: 1.5rem;
+        color: #1A1818;;
+    }
+}
+
+@media (max-width: 1024px){
+    .nav_links {
+        display: none;
+    }
+    
+    .nav_links a {
+        font-size: 1rem;
+    }
+
+    header i.hidden {
+        display: block;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 450px){
+/* header */
+
+    .logo_div {
+        width: 5rem;
+    }
+
+    /* hero section */
+
+    section.image {
+        height: 50vh;
+        border: none;
+        margin-bottom: 50px;
+    }
+
+    .quote {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        margin: 2rem 1.1rem;
+    }
+
+    .intro-section {
+        width: 94%;
+        flex-direction: column;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    figcaption {
+        margin-bottom: 1.5rem;
+        text-align: left;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .text-section {
+        font-size: 1.5rem;
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        line-height: 27px;
+    }
+
+    .article-card {
+        width: 95%;
+        margin: 0 auto 2rem;
+    }
+
+    .cards-section-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .slider-heading {
+        font-size: 1.2rem;
+    }
+
+    .feedback-none{
+        display: none;
+    }
+
+    .feedbacks {
+        width: 100%;
+    }
+
+    .feedback-card {
+        width: 100%;
+    }
+}
