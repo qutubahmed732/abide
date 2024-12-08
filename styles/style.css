@@ -495,4 +495,8 @@ footer {
     .feedback-card {
         width: 100%;
     }
+    .intro-para {
+        border: 1px solid black;
+        width: 100%;
+    }
 }
