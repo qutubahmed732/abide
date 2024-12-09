@@ -227,7 +227,6 @@ figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 20px;
     font-family: "kumbh sans", sans-serif;
 }
 
@@ -350,7 +349,6 @@ footer {
     flex-direction: column;
     font-size: 1.5rem;
     gap: 2rem;
-    transition: padding 2s ease-in-out;
 }
 
 @media (min-width: 1800px){
@@ -418,6 +416,21 @@ footer {
 
     .content p {
         font-size: 1rem;
+    }
+
+    #navbar_items {
+        padding: 0;
+    }
+
+    #navbar_items li {
+        width: 100%;  
+        padding: 10px;
+        padding-left: 2rem;
+    }
+
+    header + #navbar_items a{
+        text-decoration: none;
+        color: black;
     }
 }
 
@@ -495,8 +508,49 @@ footer {
     .feedback-card {
         width: 100%;
     }
-    .intro-para {
-        border: 1px solid black;
+
+    /* footer */
+
+    footer {
+        margin-bottom: 3rem;
+    }
+
+    .footer-container .logo_div {
+        width: 36%;
+    }
+
+    .footer-container {
         width: 100%;
+    }
+
+    .intro-para {
+        text-align: center;
+        width: 90%;
+        font-size: calc(1rem - 1px);
+        margin-bottom: 2rem;
+    }
+
+    .footer-nav_links {
+        width: 80%;
+    }
+
+    .copyright-text {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    #navbar_items {
+        padding: 0;
+    }
+
+    #navbar_items li {
+        width: 100%;  
+        padding: 10px;
+        padding-left: 2rem;
+    }
+
+    header + #navbar_items a{
+        text-decoration: none;
+        color: black;
     }
 }
