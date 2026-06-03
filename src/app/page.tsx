@@ -34,7 +34,6 @@ export default function Home() {
                   fill
                   placeholder="blur"
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
                 />
               </div>
             </div>
