@@ -40,6 +40,7 @@ export default function CoursesPage() {
                 <Image
                   className="object-cover object-center transition-transform duration-300"
                   src={CoursesImage1}
+                  placeholder="blur"
                   alt="What is Abiding Introduction"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -70,6 +71,7 @@ export default function CoursesPage() {
                 <Image
                   className="object-cover object-center transition-transform duration-300"
                   src={CoursesImage2}
+                  placeholder="blur"
                   alt="Attend A Retreat"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

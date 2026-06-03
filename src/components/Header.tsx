@@ -117,7 +117,7 @@ function SmallScreenMenuBar({ opener, pathname, open, navlinks }: any) {
       <div className="flex justify-end w-full mb-12">
         <button
           onClick={() => opener(false)}
-          className="text-white text-3xl hover:opacity-75 transition-opacity focus:outline-none"
+          className="text-white p-1 text-3xl hover:opacity-75 transition-opacity focus:outline-none"
           aria-label="Close menu"
         >
           &#x2715;

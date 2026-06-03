@@ -17,6 +17,7 @@ export function Cards({ cards, label, opener }:any) {
                 className="object-cover"
                 src={card.img}
                 alt={card.label}
+                placeholder="blur"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
               />

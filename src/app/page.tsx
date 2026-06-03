@@ -32,6 +32,7 @@ export default function Home() {
                   src={introImage}
                   alt="What is Abiding Introduction"
                   fill
+                  placeholder="blur"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />

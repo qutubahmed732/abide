@@ -34,6 +34,7 @@ export default function RetreatPage() {
                 <Image
                   className="object-cover object-bottom transition-transform duration-300"
                   src={heroImage1}
+                  placeholder="blur"
                   alt="What is Abiding Introduction"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -65,6 +66,7 @@ export default function RetreatPage() {
                   className="object-cover object-center transition-transform duration-300"
                   src={heroImage2}
                   alt="Attend A Retreat"
+                  placeholder="blur"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority

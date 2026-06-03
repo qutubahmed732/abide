@@ -40,6 +40,7 @@ export default function TestimoanialSection() {
                   className="object-cover"
                   src={card.img}
                   alt={card.title}
+                  placeholder="blur"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
