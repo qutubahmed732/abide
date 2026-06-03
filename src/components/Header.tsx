@@ -71,6 +71,7 @@ export default function Header() {
             return (
               <span
                 key={link.id}
+                onClick={() => setOpen(!open)}
                 className={`${path === link.link
                     ? "underline underline-offset-7 decoration-2 decoration-red-700"
                     : ""
@@ -117,7 +118,7 @@ function SmallScreenMenuBar({ opener, pathname, open, navlinks }: any) {
       <div className="flex justify-end w-full mb-12">
         <button
           onClick={() => opener(false)}
-          className="text-white p-3 text-3xl hover:opacity-75 transition-opacity focus:outline-none border"
+          className="text-white p-3 text-3xl hover:opacity-75 transition-opacity focus:outline-none"
           aria-label="Close menu"
         >
           &#x2715;
@@ -132,6 +133,7 @@ function SmallScreenMenuBar({ opener, pathname, open, navlinks }: any) {
               <Link
                 key={link.id}
                 href={link.link}
+                onClick={() => opener(false)}
                 className={`text-2xl font-bold tracking-wider uppercase transition-colors hover:text-gray-300 ${isActive
                     ? "underline underline-offset-12 decoration-[3px] decoration-[#b91c1c]"
                     : ""
@@ -144,6 +146,7 @@ function SmallScreenMenuBar({ opener, pathname, open, navlinks }: any) {
 
           <Link
             href="/login"
+            onClick={() => opener(false)}
             className="mt-4 bg-white text-black font-bold uppercase tracking-widest py-3 px-10 text-sm transition-all border border-white hover:bg-transparent hover:text-white"
           >
             Login
