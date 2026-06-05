@@ -71,7 +71,6 @@ export default function Header() {
             return (
               <span
                 key={link.id}
-                onClick={() => setOpen(!open)}
                 className={`${path === link.link
                     ? "underline underline-offset-7 decoration-2 decoration-red-700"
                     : ""
